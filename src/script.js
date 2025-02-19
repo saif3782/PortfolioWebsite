@@ -58,3 +58,32 @@ document.querySelectorAll('.nav-links a').forEach(anchor => {
         });
     });
 });
+document.querySelector(".cta-button").addEventListener("click", function() {
+    document.getElementById("about-me").scrollIntoView({ behavior: "smooth" });
+});
+// Smooth scrolling for navigation
+document.querySelectorAll('.nav-links a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
+    });
+});
+
+// Function to scroll to section
+function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+}
+
+// Hover Effect for Skills & Expertise
+document.querySelectorAll('.skills-category').forEach(item => {
+    item.addEventListener('mouseenter', () => {
+        item.style.transform = "translateY(-5px)";
+        item.style.background = "#3d3f5a";
+    });
+
+    item.addEventListener('mouseleave', () => {
+        item.style.transform = "translateY(0)";
+        item.style.background = "#222";
+    });
+});
