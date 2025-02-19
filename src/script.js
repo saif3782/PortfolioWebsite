@@ -41,3 +41,20 @@ document.getElementById('contact-form')?.addEventListener('submit', function(e) 
     alert('Thank you for your message! I will get back to you soon.');
     this.reset();
 });
+// Scroll to Resume section when "Resume" is clicked
+document.querySelector('a[href="#resume"]').addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector("#resume").scrollIntoView({
+        behavior: "smooth"
+    });
+});
+// Smooth Scrolling for Navbar Links
+document.querySelectorAll('.nav-links a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        document.getElementById(targetId).scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+});

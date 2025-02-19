@@ -459,3 +459,147 @@ section {
 .fade-in {
     animation: fadeIn 1s ease forwards;
 }
+.resume {
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.resume-intro {
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.resume-download {
+    margin-top: 1.5rem;
+}
+
+.resume-btn {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    background: linear-gradient(135deg, #7aa2f7, #bb9af7);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(122, 162, 247, 0.3);
+}
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(10, 10, 20, 0.9);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #7aa2f7;
+}
+
+/* Resume Section */
+.resume {
+    padding: 6rem 0;
+    text-align: center;
+    background: #121212;
+}
+
+.resume-intro {
+    font-size: 1.2rem;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.resume-download {
+    margin-top: 1.5rem;
+}
+
+.resume-btn {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    background: linear-gradient(135deg, #7aa2f7, #bb9af7);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(122, 162, 247, 0.3);
+}
+
+/* Skills Section */
+.skills {
+    padding: 6rem 0;
+    text-align: center;
+    background: #181818; /* Different background color */
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+.skills-category {
+    background: #222;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 40%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skills-category h3 {
+    color: #7aa2f7;
+    margin-bottom: 1rem;
+}
